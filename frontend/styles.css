@@ -1,0 +1,168 @@
+body
+{
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+.navbar
+{
+    display: flex;
+    align-items: center;
+    margin: 16px;
+    height: 36px;
+}
+
+#freeroomsLogo
+{
+    height: 40px;
+}
+
+#freeroomsText
+{
+    font-size: 36px;
+    color: #EF6C00;
+}
+
+.spacer
+{
+    flex-grow: 1;
+}
+
+.secondaryNavbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin: 16px;
+}
+
+.actionButton
+{
+    display: flex;
+    align-items: center;
+    color: #EF6C00;
+    border: 3px solid #EF6C00;
+    border-radius: 8px;
+    padding: 0px 16px 0px 16px;
+    height: 36px;
+}
+
+.actionButton .material-icons
+{
+    margin: 0px 8px 0px 0px;
+}
+
+.searchContainer
+{
+    display: flex;
+    align-items: center;
+    border: 1px solid #A0A0A0;
+    border-radius: 4px;
+    padding: 0px 24px 0px 24px;
+    height: 40px;
+    width: 60%;
+}
+
+.searchContainer .searchIcon
+{
+    color: #808080;
+    transform: translate(-12px, 0px);
+}
+
+#freeroomsSearch
+{
+    border: none;
+    outline: none;
+    background: none;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.navbarButton
+{
+    margin: 0px 6px 0px 6px;
+    color: #EF6C00;
+    font-size: 24px;
+    border: 1px solid #EF6C00;
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbarButton.active
+{
+    background-color: #EF6C00;
+    color: #FFFFFF;
+    border-color: #EF6C00;
+}
+
+#buildingContainer
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-rows: repeat(auto-fill, clamp(180px, 40vh, 360px));
+    row-gap: 20px;
+    column-gap: 20px;
+    padding: 20px;
+}
+
+.buildingCard
+{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 40vh;
+    min-height: 180px;
+    max-height: 360px;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 17.5% 60% 22.5%;
+    border-radius: 12px;
+    background-size: auto 100%;
+    background-position: center;
+    color: #FFFFFF;
+}
+
+.buildingStatus
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #FFFFFF;
+    width: 72%;
+    grid-area: 1 / 2 / 2 / 3;
+    padding: 16px;
+    border-radius: 16px;
+    margin: 12px;
+    font-weight: bold;
+    color: #000000;
+    font-size: 12px;
+
+}
+
+.statusDot
+{
+    width: 10px;
+    height: 10px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.buildingName
+{
+    align-items: center;
+    background-color: #EF6C00;
+    color: #FFFFFF;
+    padding: 12px;
+    font-weight: bold;
+    grid-area: 3 / 1 / 4 / 3;
+    width: 85%;
+    display: flex;
+    margin: 12px;
+    border-radius: 16px;
+}

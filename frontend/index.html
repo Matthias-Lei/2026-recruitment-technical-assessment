@@ -1,0 +1,70 @@
+<!--SHArdow-->
+
+<!doctype html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A site by SHArdow">
+        <meta name="theme-color" content="#242424">
+        <meta name="robots" content="noindex, nofollow, noimageindex, noarchive, nosnippet">
+        <meta name="author" content="shardow">
+        <meta name="og:title" content="freerooms">
+        <meta name="og:description" content="A site by SHArdow">
+        <meta name="og:image" content="">
+        <meta name="og:url" content="">
+        <meta name="og:type" content="website">
+        <title>Freerooms</title>
+        <link rel="icon" href="assets/freeRoomsLogo.png">
+        <link rel="apple-touch-icon" href="assets/freeRoomsLogo.png">
+        <link rel="manifest" href="manifest.webmanifest">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+
+    <body>
+
+        <div class="navbar">
+
+            <img id="freeroomsLogo" src="./assets/freeRoomsLogo.png" alt="Freerooms Logo">
+            <div id="freeroomsText">Freerooms</div>
+
+            <div class="spacer"></div>
+
+            <div class="material-icons navbarButton">search</div>
+            <div class="material-icons navbarButton active">grid_view</div>
+            <div class="material-icons navbarButton">map</div>
+            <div class="material-icons navbarButton">dark_mode</div>
+
+        </div>
+
+        <div class="secondaryNavbar">
+            <div class="actionButton">
+                <div class="material-icons">filter_list</div> Filters
+            </div>
+            
+            <div class="searchContainer">
+                <div class="material-icons searchIcon">search</div>
+                <input id="freeroomsSearch" type="text" placeholder="Search for a building...">
+            </div>
+
+            <div class="actionButton">
+                <div class="material-icons">sort</div> Sort
+            </div>
+        </div>
+
+
+        <div id="buildingContainer"></div>
+
+        <script src="buildings.json"></script>
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
